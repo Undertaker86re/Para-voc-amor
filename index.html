@@ -156,7 +156,7 @@
     <h2>Desde 17 de Abril de 2025 💑</h2>
 
     <div class="contador">
-      Estamos juntos há <span id="diasJuntos">...</span> dias! 🥰
+      Estavamos juntos há <span id="diasJuntos">...</span> dias! 🥰
     </div>
 
     <button class="heart-button" onclick="criarCoracoes()">Clique aqui amor 🤭❤️</button>
@@ -208,11 +208,12 @@
   </div>
 
   <script>
-    const dataInicio = new Date(2025, 3, 17); // Abril (mês 3)
-    const hoje = new Date();
-    const diffTime = hoje - dataInicio;
-    const dias = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-    document.getElementById("diasJuntos").textContent = dias;
+const dataInicio = new Date(2025, 3, 17);
+const dataFim = new Date(2025, 6, 3);    
+const diffTime = dataFim - dataInicio;
+const dias = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+document.getElementById("diasJuntos").textContent = dias;
+
     
     function criarCenariosDeCoracoes() {
   const coracoes = ["❤️", "💖", "💘", "💕", "💓", "💗", "💞"];
